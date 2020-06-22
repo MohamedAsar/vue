@@ -9,7 +9,7 @@ export const store = new Vuex.Store({
     mutations: {
         restoreState: (state, payload) => {
             console.log("restore state");
-            state.Portfolio.funds = payload.funds;
+            state.Portfolio.funds = payload.funds.fund;
             state.Stocks.stocks = payload.stocks; 
             state.Portfolio.portfolio = payload.portfolio; 
         }
@@ -18,7 +18,7 @@ export const store = new Vuex.Store({
         restore( { commit } ) {
             /* Restore saved state */
             console.log("commit state");
-            Vue.http.get('https://udemy-vuejs-7a74d.firebaseio.com/state.json')
+            Vue.http.get('https://my-json-server.typicode.com/MohamedAsar/myjson/db')
                 .then(response => {
                     
                     commit("restoreState",response.body);

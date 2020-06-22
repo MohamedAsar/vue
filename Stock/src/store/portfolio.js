@@ -1,10 +1,10 @@
 const state = {
     funds: 10000,
     portfolio: [
-        { name: "BMW", quantity: 0, stock: null },
-        { name: "Google", quantity: 0, stock: null },
+        { name: "Samsung", quantity: 0, stock: null },
+        { name: "Redmi", quantity: 0, stock: null },
         { name: "Apple", quantity: 0, stock: null },
-        { name: "Twitter", quantity: 0, stock: null }
+        { name: "Vivo", quantity: 0, stock: null }
     ]
 }
 
